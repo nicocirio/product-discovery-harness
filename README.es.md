@@ -63,7 +63,8 @@ curl -fsSL https://raw.githubusercontent.com/nicocirio/product-discovery-harness
 Instala el canal etiquetado `stable` en
 `~/.local/share/product-discovery-harness`, enlaza las skills bajo un namespace
 propio `product-discovery-harness` en `~/.agents/skills` y/o
-`~/.claude/skills`, y deja disponible el CLI local `product-harness`.
+`~/.claude/skills`, y enlaza `product-harness` y sus comandos de mantenimiento
+en `~/.local/bin`. Asegurate de tener `~/.local/bin` en el `PATH` de tu shell.
 
 Usá `latest` solo si querés la rama principal en lugar del tag más reciente:
 

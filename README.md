@@ -90,7 +90,8 @@ curl -fsSL https://raw.githubusercontent.com/nicocirio/product-discovery-harness
 This installs the tagged `stable` channel in
 `~/.local/share/product-discovery-harness`, links skills under an owned
 `product-discovery-harness` namespace in `~/.agents/skills` and/or
-`~/.claude/skills`, and exposes the checkout-local `product-harness` CLI.
+`~/.claude/skills`, and links `product-harness` plus its maintenance commands
+in `~/.local/bin`. Ensure `~/.local/bin` is on your shell `PATH`.
 
 Use `latest` when you deliberately want the default branch instead of the newest
 tag:

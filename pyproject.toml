@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "product-discovery-harness"
-version = "0.1.0"
+version = "0.1.1"
 description = "Installable product discovery skills and durable repository contract"
 requires-python = ">=3.10"
 dependencies = ["PyYAML>=6.0", "jsonschema>=4.18"]

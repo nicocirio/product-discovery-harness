@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — 2026-07-29
+
+- Expose `product-harness` and maintenance commands in `~/.local/bin` during
+  install/update, with safe collision protection and symlink-aware entrypoints.
+- Ensure normal installations refresh and select the requested stable/latest
+  channel; reserve the local-checkout bypass for explicit development use.
+- Refresh tags forcibly so an installed checkout can recover from a corrected
+  release tag.
+
 ## 0.1.0 — 2026-07-28
 
 - Initial end-to-end Product Discovery Harness: target contract, skills,

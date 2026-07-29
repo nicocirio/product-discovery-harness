@@ -1,0 +1,9 @@
+work_item: global-command-shims
+requirements:
+- id: FR-001
+  title: Install documented harness and maintenance commands into a user command directory
+acceptance_criteria:
+- id: AC-001
+  title: product-harness-status executes through the installed command directory
+- id: AC-002
+  title: rerunning the public installer refreshes an existing checkout before linking commands

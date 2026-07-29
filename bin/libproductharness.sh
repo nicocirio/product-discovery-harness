@@ -19,7 +19,7 @@ product_harness_channel() { [[ "${1:-stable}" == stable || "${1:-stable}" == lat
 product_harness_version() { sed -n 's/.*"version"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$1/version.json"; }
 product_harness_clone_or_fetch() {
   local repo_path="$1" repo_url="$2"
-  if [[ -d "$repo_path/.git" ]]; then git -C "$repo_path" fetch --tags origin
+  if [[ -d "$repo_path/.git" ]]; then git -C "$repo_path" fetch --tags --force origin
   elif [[ -e "$repo_path" ]]; then product_harness_die "repo path exists but is not a git checkout: $repo_path"
   else mkdir -p "$(dirname "$repo_path")"; git clone "$repo_url" "$repo_path"; fi
 }
@@ -62,6 +62,20 @@ product_harness_link_target() {
   done
   ln -sfn "$repo_path/bin/product-harness" "$namespace/product-harness"
   ln -sfn "$repo_path" "$namespace/product-discovery-harness-root"
+}
+product_harness_link_commands() {
+  local repo_path="$1" command_dir="${HOME}/.local/bin" command destination source
+  mkdir -p "$command_dir"
+  for command in product-harness product-harness-install product-harness-status product-harness-update product-harness-validate; do
+    source="$repo_path/bin/$command"; destination="$command_dir/$command"
+    if [[ -e "$destination" && ! -L "$destination" ]]; then
+      product_harness_die "refusing to replace non-symlink command: $destination"
+    fi
+    if [[ -L "$destination" && "$(readlink "$destination")" != "$source" ]]; then
+      product_harness_die "refusing to replace unmanaged command symlink: $destination"
+    fi
+    ln -sfn "$source" "$destination"
+  done
 }
 product_harness_save_config() {
   local repo_path="$1" repo_url="$2" channel="$3" commit="$4" version="$5"
