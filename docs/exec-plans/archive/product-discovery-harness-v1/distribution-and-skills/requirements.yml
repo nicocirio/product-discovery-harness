@@ -1,0 +1,15 @@
+work_item: distribution-and-skills
+requirements:
+- title: Provide all named product skills, personas, templates, and bilingual guides
+  id: FR-001
+- title: Install and repair collision-safe Codex and Claude skill namespaces
+  id: FR-002
+- title: Support stable/latest installation, update, and status reporting
+  id: FR-003
+acceptance_criteria:
+- title: Every required SKILL.md has prefixed frontmatter and operational guidance
+  id: AC-001
+- title: Temporary-home installs are idempotent and repair broken owned links
+  id: AC-002
+- title: Readmes include installation, workflows, safety, handoff, and troubleshooting
+  id: AC-003

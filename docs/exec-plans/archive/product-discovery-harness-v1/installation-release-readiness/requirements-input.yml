@@ -1,0 +1,11 @@
+requirements:
+  - title: Install a self-contained checkout with skills and an accessible CLI without requiring pip
+  - title: Implement stable and latest channel selection plus real update and status behavior
+  - title: Make installed skill resources resolvable from the checkout
+  - title: Document and test the complete public installation and target-bootstrap workflow
+acceptance_criteria:
+  - title: A clean temporary HOME installation exposes working skills and product-harness CLI
+  - title: Update fetches and reselects the requested channel while preserving healthy links
+  - title: Skills explain how to resolve shared agents and resources from the installed checkout
+  - title: English and Spanish README provide copyable install update status and bootstrap guidance
+  - title: Tests CI and Harness validations pass

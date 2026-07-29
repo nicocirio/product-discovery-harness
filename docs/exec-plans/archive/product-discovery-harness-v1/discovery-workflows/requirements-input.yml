@@ -1,0 +1,8 @@
+requirements:
+  - title: "Create evidence-based provisional current-state audit artifacts"
+  - title: "Persist sessions and lifecycle-aware discovery records"
+  - title: "Generate external-design briefs and Definition-of-Ready handoffs"
+acceptance_criteria:
+  - title: "Audit does not modify application files and labels inferred findings"
+  - title: "Sessions, IDs, and accepted decisions retain required metadata"
+  - title: "Incomplete features fail handoff while ready features create valid informal.md"

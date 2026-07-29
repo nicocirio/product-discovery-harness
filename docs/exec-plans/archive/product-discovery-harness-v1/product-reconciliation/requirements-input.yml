@@ -1,0 +1,8 @@
+requirements:
+  - title: "Represent and validate durable record relationships and alignment references"
+  - title: "Generate focused and global reconciliation reports from canonical records"
+  - title: "Integrate human-confirmed reconciliation into brainstorming promotion workflows"
+acceptance_criteria:
+  - title: "Invalid, missing, duplicate, and self-referential relations fail validation"
+  - title: "A report identifies unresolved relationships and cites canonical records without mutating them"
+  - title: "Skills retain raw ideas in sessions and require reconciliation before durable promotion"

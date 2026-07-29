@@ -1,0 +1,5 @@
+opportunities: []
+# Each record may include title, path, created_at, last_updated_at,
+# last_reviewed_at, and review_after. Paths are target-relative.
+# Durable records may also include related_records, decision_refs,
+# current_capability_refs, and alignment_status.

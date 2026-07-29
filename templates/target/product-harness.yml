@@ -1,0 +1,32 @@
+version: 1
+mode: pending
+mode_detection:
+  status: pending
+  evidence: []
+legacy_stance: reference
+repository_scope:
+  include: ["."]
+  exclude: [".git", "node_modules", "deps", "build", "dist", "tmp", "vendor"]
+languages:
+  interaction: auto
+  documentation: auto
+discovery:
+  current_phase: mode-selection
+  require_explicit_acceptance_for_decisions: true
+  preserve_session_summaries: true
+  ask_one_primary_question_at_a_time: true
+integration:
+  engineering_harness:
+    enabled: false
+    export_enabled: false
+    export_mode: manual
+    contract_version: 1
+    work_items_path: docs/exec-plans/current
+    product_specs_path: docs/product-specs
+paths:
+  status: docs/product-discovery/STATUS.md
+  product_sense: docs/PRODUCT_SENSE.md
+  experience_sense: docs/EXPERIENCE_SENSE.md
+  discovery_root: docs/product-discovery
+tooling:
+  product_discovery_harness_version: 0.1.0

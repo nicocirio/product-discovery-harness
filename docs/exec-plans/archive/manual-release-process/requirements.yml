@@ -1,0 +1,18 @@
+work_item: manual-release-process
+requirements:
+- id: FR-001
+  title: Document a manual release sequence from clean validation through pushed version
+    tag
+- id: FR-002
+  title: Explain how stable and latest installation channels relate to releases
+- id: FR-003
+  title: Keep the English guide primary and the Spanish guide equivalent
+acceptance_criteria:
+- id: AC-001
+  title: A maintainer can follow the documented commands to prepare and push a version
+    tag
+- id: AC-002
+  title: Documentation clearly states that stable resolves to the newest tag and latest
+    to the default branch
+- id: AC-003
+  title: English and Spanish documentation describe the same manual-release policy

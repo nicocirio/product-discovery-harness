@@ -1,0 +1,8 @@
+requirements:
+  - title: "Provide all named product skills, personas, templates, and bilingual guides"
+  - title: "Install and repair collision-safe Codex and Claude skill namespaces"
+  - title: "Support stable/latest installation, update, and status reporting"
+acceptance_criteria:
+  - title: "Every required SKILL.md has prefixed frontmatter and operational guidance"
+  - title: "Temporary-home installs are idempotent and repair broken owned links"
+  - title: "Readmes include installation, workflows, safety, handoff, and troubleshooting"

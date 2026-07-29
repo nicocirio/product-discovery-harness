@@ -1,0 +1,17 @@
+work_item: product-reconciliation
+requirements:
+- title: Represent and validate durable record relationships and alignment references
+  id: FR-001
+- title: Generate focused and global reconciliation reports from canonical records
+  id: FR-002
+- title: Integrate human-confirmed reconciliation into brainstorming promotion workflows
+  id: FR-003
+acceptance_criteria:
+- title: Invalid, missing, duplicate, and self-referential relations fail validation
+  id: AC-001
+- title: A report identifies unresolved relationships and cites canonical records
+    without mutating them
+  id: AC-002
+- title: Skills retain raw ideas in sessions and require reconciliation before durable
+    promotion
+  id: AC-003

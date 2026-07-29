@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"; source "$SCRIPT_DIR/libproductharness.sh"; product_harness_load_config
+echo "Repo path: $REPO_PATH"; echo "Channel: $CHANNEL"; echo "Installed version: $INSTALLED_VERSION"; echo "Commit: $COMMIT"
+for root_path in "$HOME/.agents/skills" "$HOME/.claude/skills"; do for namespace in "$root_path"/product-discovery-harness*; do [[ -f "$namespace/.product-harness-install-root" ]] || continue; echo "Install: $namespace"; find "$namespace" -type l ! -exec test -e {} \; -print; done; done

@@ -1,0 +1,11 @@
+requirements:
+  - title: Present product discovery as guided conversation with product-talk as the default first action
+  - title: Explain simple and deeper discovery paths without implying a mandatory linear skill sequence
+  - title: Teach durable IDs as harness-assigned results that users retrieve through the landscape
+  - title: Audit every installed product skill for user-guidance and expert-knowledge assumptions
+acceptance_criteria:
+  - title: English and Spanish guides tell newcomers to start with product-talk and state that the harness recommends the next useful step
+  - title: The appointment-booking example shows an ID only after its creation and shows landscape as the way to retrieve it
+  - title: The guides distinguish a simple path from an optional deeper discovery path
+  - title: A durable audit identifies every product skill's guidance posture and concrete follow-up recommendations
+  - title: Automated README checks protect the new guidance and examples

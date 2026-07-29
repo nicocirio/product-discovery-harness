@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["version","mode","legacy_stance"],"properties":{"version":{"const":1},"mode":{"enum":["greenfield","brownfield","pending"]},"legacy_stance":{"enum":["foundation","reference","migration","salvage","ignore"]}}}

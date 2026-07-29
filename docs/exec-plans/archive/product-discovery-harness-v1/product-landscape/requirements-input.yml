@@ -1,0 +1,8 @@
+requirements:
+  - title: "Store a real detail path and review timestamps for indexed opportunities and features"
+  - title: "Generate a compact product landscape from real indexed records"
+  - title: "Highlight stale and incomplete records without changing lifecycle state"
+acceptance_criteria:
+  - title: "Landscape links only existing local files and flags missing paths"
+  - title: "Landscape displays status with next action and relative time since review"
+  - title: "Stale records are grouped for review and never automatically rejected or deferred"

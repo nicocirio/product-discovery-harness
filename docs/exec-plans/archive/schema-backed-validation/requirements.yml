@@ -1,0 +1,19 @@
+work_item: schema-backed-validation
+requirements:
+- id: FR-001
+  title: Validate each schema-backed target document with its declared JSON Schema
+- id: FR-002
+  title: Preserve actionable semantic diagnostics for IDs, relationships, dates, and
+    paths
+- id: FR-003
+  title: Validate the generated Engineering Harness handoff frontmatter before writing
+    it
+acceptance_criteria:
+- id: AC-001
+  title: Invalid schema-constrained target YAML produces a file-scoped validation
+    error
+- id: AC-002
+  title: A seeded target remains valid and existing semantic validation tests remain
+    meaningful
+- id: AC-003
+  title: Invalid generated handoff frontmatter is rejected before a file is written

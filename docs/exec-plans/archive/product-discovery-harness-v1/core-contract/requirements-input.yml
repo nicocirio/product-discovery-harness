@@ -1,0 +1,8 @@
+requirements:
+  - title: "Detect greenfield, brownfield, or pending mode with explicit override"
+  - title: "Seed the complete target contract without replacing substantive content"
+  - title: "Validate config, records, lifecycle transitions, IDs, and references"
+acceptance_criteria:
+  - title: "Empty, boilerplate, and substantive fixtures classify correctly"
+  - title: "Repeated bootstrap is idempotent and preserves user-authored documents"
+  - title: "Invalid configuration and broken record links return actionable failures"

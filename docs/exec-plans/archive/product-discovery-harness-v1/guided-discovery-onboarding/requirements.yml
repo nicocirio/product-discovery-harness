@@ -1,0 +1,28 @@
+work_item: guided-discovery-onboarding
+requirements:
+- title: Present product discovery as guided conversation with product-talk as the
+    default first action
+  id: FR-001
+- title: Explain simple and deeper discovery paths without implying a mandatory linear
+    skill sequence
+  id: FR-002
+- title: Teach durable IDs as harness-assigned results that users retrieve through
+    the landscape
+  id: FR-003
+- title: Audit every installed product skill for user-guidance and expert-knowledge
+    assumptions
+  id: FR-004
+acceptance_criteria:
+- title: English and Spanish guides tell newcomers to start with product-talk and
+    state that the harness recommends the next useful step
+  id: AC-001
+- title: The appointment-booking example shows an ID only after its creation and shows
+    landscape as the way to retrieve it
+  id: AC-002
+- title: The guides distinguish a simple path from an optional deeper discovery path
+  id: AC-003
+- title: A durable audit identifies every product skill's guidance posture and concrete
+    follow-up recommendations
+  id: AC-004
+- title: Automated README checks protect the new guidance and examples
+  id: AC-005

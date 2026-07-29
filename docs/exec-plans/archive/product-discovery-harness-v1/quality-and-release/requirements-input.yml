@@ -1,0 +1,8 @@
+requirements:
+  - title: "Provide fixtures and automated tests for mandatory behavior"
+  - title: "Run tests and target validation in GitHub Actions"
+  - title: "Publish version, changelog, and validation evidence"
+acceptance_criteria:
+  - title: "Tests cover detection, seeding, IDs, validation, handoff, and installation"
+  - title: "CI invokes tests and validation from a clean environment"
+  - title: "Release metadata reports version 0.1.0 and documents results"

@@ -1,0 +1,17 @@
+work_item: product-landscape
+requirements:
+- title: Store a real detail path and review timestamps for indexed opportunities
+    and features
+  id: FR-001
+- title: Generate a compact product landscape from real indexed records
+  id: FR-002
+- title: Highlight stale and incomplete records without changing lifecycle state
+  id: FR-003
+acceptance_criteria:
+- title: Landscape links only existing local files and flags missing paths
+  id: AC-001
+- title: Landscape displays status with next action and relative time since review
+  id: AC-002
+- title: Stale records are grouped for review and never automatically rejected or
+    deferred
+  id: AC-003

@@ -1,0 +1,15 @@
+work_item: discovery-workflows
+requirements:
+- title: Create evidence-based provisional current-state audit artifacts
+  id: FR-001
+- title: Persist sessions and lifecycle-aware discovery records
+  id: FR-002
+- title: Generate external-design briefs and Definition-of-Ready handoffs
+  id: FR-003
+acceptance_criteria:
+- title: Audit does not modify application files and labels inferred findings
+  id: AC-001
+- title: Sessions, IDs, and accepted decisions retain required metadata
+  id: AC-002
+- title: Incomplete features fail handoff while ready features create valid informal.md
+  id: AC-003

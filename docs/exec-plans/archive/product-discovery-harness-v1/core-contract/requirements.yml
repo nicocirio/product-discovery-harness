@@ -1,0 +1,15 @@
+work_item: core-contract
+requirements:
+- title: Detect greenfield, brownfield, or pending mode with explicit override
+  id: FR-001
+- title: Seed the complete target contract without replacing substantive content
+  id: FR-002
+- title: Validate config, records, lifecycle transitions, IDs, and references
+  id: FR-003
+acceptance_criteria:
+- title: Empty, boilerplate, and substantive fixtures classify correctly
+  id: AC-001
+- title: Repeated bootstrap is idempotent and preserves user-authored documents
+  id: AC-002
+- title: Invalid configuration and broken record links return actionable failures
+  id: AC-003

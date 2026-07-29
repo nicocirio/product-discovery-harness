@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/libproductharness.sh"
+product_harness_require_git; product_harness_require_python
+CHANNEL="$(product_harness_channel "${1:-stable}")"
+REPO_PATH="${PRODUCT_HARNESS_REPO_PATH:-$PRODUCT_HARNESS_DEFAULT_REPO_PATH}"
+REPO_URL="${PRODUCT_HARNESS_REPO_URL:-$PRODUCT_HARNESS_DEFAULT_REPO_URL}"
+LOCAL_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+if [[ "$REPO_PATH" != "$LOCAL_ROOT" ]]; then product_harness_clone_or_fetch "$REPO_PATH" "$REPO_URL"; COMMIT="$(product_harness_checkout_channel "$REPO_PATH" "$CHANNEL")"
+else COMMIT="$(git -C "$REPO_PATH" rev-parse --short HEAD 2>/dev/null || echo working-tree)"; fi
+product_harness_prepare_runtime "$REPO_PATH"
+VERSION="$(product_harness_version "$REPO_PATH")"
+while IFS= read -r root_path; do namespace="$(product_harness_namespace "$root_path" "$REPO_PATH")"; product_harness_link_target "$REPO_PATH" "$namespace" "$CHANNEL"; echo "Installed: $namespace"; done < <(product_harness_targets)
+product_harness_save_config "$REPO_PATH" "$REPO_URL" "$CHANNEL" "$COMMIT" "$VERSION"
+echo "Channel: $CHANNEL"; echo "Selected commit: $COMMIT"; echo "Version: $VERSION"

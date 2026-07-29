@@ -1,0 +1,8 @@
+requirements:
+  - title: "Explain the product discovery mental model and durable truth layers in approachable English"
+  - title: "Document all skills, realistic workflows, outputs, safety, and optional Simon Initiative complement"
+  - title: "Provide a complete aligned Spanish README"
+acceptance_criteria:
+  - title: "README distinguishes conversational skills from local CLI commands and shows valid examples"
+  - title: "README covers all installed product skills and includes workflow/output examples"
+  - title: "Spanish README preserves the same operational guidance and links"

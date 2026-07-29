@@ -1,0 +1,27 @@
+work_item: installation-release-readiness
+requirements:
+- title: Install a self-contained checkout with skills and an accessible CLI without
+    requiring pip
+  id: FR-001
+- title: Implement stable and latest channel selection plus real update and status
+    behavior
+  id: FR-002
+- title: Make installed skill resources resolvable from the checkout
+  id: FR-003
+- title: Document and test the complete public installation and target-bootstrap workflow
+  id: FR-004
+acceptance_criteria:
+- title: A clean temporary HOME installation exposes working skills and product-harness
+    CLI
+  id: AC-001
+- title: Update fetches and reselects the requested channel while preserving healthy
+    links
+  id: AC-002
+- title: Skills explain how to resolve shared agents and resources from the installed
+    checkout
+  id: AC-003
+- title: English and Spanish README provide copyable install update status and bootstrap
+    guidance
+  id: AC-004
+- title: Tests CI and Harness validations pass
+  id: AC-005

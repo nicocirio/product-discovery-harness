@@ -1,0 +1,14 @@
+requirements:
+  - id: FR-001
+    title: Preserve a unique dated audit report for every brownfield audit execution
+  - id: FR-002
+    title: Continue updating current-state inventory and repository map as the current snapshot
+  - id: FR-003
+    title: Make historical audit reports easy to find from a durable audit index and CLI output
+acceptance_criteria:
+  - id: AC-001
+    title: Two audits on the same day create distinct historical Markdown reports without overwriting either
+  - id: AC-002
+    title: Each audit refreshes the current-state inventory and repository map from scoped repository files
+  - id: AC-003
+    title: The audit index and CLI output identify the latest historical report

@@ -1,0 +1,11 @@
+requirements:
+  - title: Define a consistent next-focus output contract for every installed product skill
+  - title: Add friendly explicit recovery routes for missing target setup, raw ideas, unknown IDs, and unmet specialist prerequisites
+  - title: Preserve explicit owner confirmation and existing product record boundaries while improving routing
+  - title: Keep README learning claims, skill protocols, and automated verification aligned
+acceptance_criteria:
+  - title: Each of the nineteen SKILL.md files requires one Recommended next focus in its output contract
+  - title: Every ID-taking or stateful specialist skill explains a usable route when its prerequisite is absent or unresolved
+  - title: Product-talk and product-resume remain valid no-expertise entry points and no protocol permits automatic promotion or acceptance
+  - title: Automated tests verify skill-contract coverage, recovery routing, and README alignment
+  - title: Full repository and Harness validation gates pass

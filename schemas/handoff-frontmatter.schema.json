@@ -1,0 +1,1 @@
+{"type":"object","required":["document_type","contract_version","feature_id","opportunity_ids","product_harness_version","status"],"properties":{"document_type":{"const":"product-feature-handoff"},"contract_version":{"const":1},"status":{"const":"ready-for-analysis"}}}

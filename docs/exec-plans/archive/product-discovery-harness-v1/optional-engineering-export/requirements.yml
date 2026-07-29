@@ -1,0 +1,20 @@
+work_item: optional-engineering-export
+requirements:
+- title: Create a complete canonical product spec without requiring Engineering Harness
+    directories
+  id: FR-001
+- title: Export an Engineering Harness informal document only through explicit opt-in
+  id: FR-002
+- title: Preserve existing non-generated engineering artifacts and validate product-only
+    targets
+  id: FR-003
+acceptance_criteria:
+- title: A handoff creates docs/product-specs content while no exec-plans directory
+    is required
+  id: AC-001
+- title: Opt-in export creates contract-valid informal.md with a link to its canonical
+    spec
+  id: AC-002
+- title: An unowned existing informal.md is not overwritten and product validation
+    passes without exec-plans
+  id: AC-003
